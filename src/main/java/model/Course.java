@@ -97,4 +97,16 @@ public class Course {
         }
         return result;
     }
+    public String updateStudent(String id, Student student){
+        String result = "";
+        Student foundStudent = searchStudent(id);
+        if(foundStudent != null){
+            listStudents.remove(foundStudent);
+            listStudents.add(student);
+            result = "La mascota ha sido eliminada exitosamente.";
+        } else {
+            result = "La mascota no ha sido encontrada.";
+        }
+        return result;
+    }
 }
