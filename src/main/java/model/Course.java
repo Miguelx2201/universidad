@@ -91,9 +91,9 @@ public class Course {
         Student foundStudent = searchStudent(student.getId());
         if(foundStudent != null) {
             listStudents.remove(foundStudent);
-            result = "La mascota ha sido eliminada exitosamente.";
+            result = "Student has been removed successfully";
         } else {
-            result = "La mascota no ha sido encontrada en el sistema.";
+            result = "Student not found";
         }
         return result;
     }
@@ -103,9 +103,9 @@ public class Course {
         if(foundStudent != null){
             listStudents.remove(foundStudent);
             listStudents.add(student);
-            result = "La mascota ha sido eliminada exitosamente.";
+            result = "Student has been updated successfully";
         } else {
-            result = "La mascota no ha sido encontrada.";
+            result = "Student not found";
         }
         return result;
     }
